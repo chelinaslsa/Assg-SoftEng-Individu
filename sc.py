@@ -1,4 +1,3 @@
-
 def tambah(a, b):
     return a + b
 
@@ -13,13 +12,17 @@ def bagi(a, b):
         return "Tidak bisa dibagi dengan nol"
     return a / b
 
+def pangkat(a, b):
+    return a ** b
+
 def main():
     print("Kalkulator Sederhana")
     print("1. Tambah")
     print("2. Kurang")
     print("3. Kali")
     print("4. Bagi")
-    pilihan = input("Pilih operasi (1/2/3/4): ")
+    print("5. Pangkat")
+    pilihan = input("Pilih operasi (1/2/3/4/5): ")
 
     a = float(input("Masukkan angka pertama: "))
     b = float(input("Masukkan angka kedua: "))
@@ -32,6 +35,8 @@ def main():
         print("Hasil:", kali(a, b))
     elif pilihan == '4':
         print("Hasil:", bagi(a, b))
+    elif pilihan == '5':
+        print("Hasil:", pangkat(a, b))
     else:
         print("Pilihan tidak valid")
 
